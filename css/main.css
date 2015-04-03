@@ -1,8 +1,12 @@
 
-	
+ :root {
+    background-color: #585858;
+}	
+
 body {
-	background : #DAD5C1;
+	
 	font-family : "Helvetica","Arial",Tahoma,Arial,Helvetica,sans-serif;
+	font-size: 100%;
 	color: #fff;
 	background-image: url("../images/subtle-grey-grid.png");
 	margin: 0px;
@@ -10,7 +14,12 @@ body {
 }
 
 
+/*-------paragraphs & images------*/
 
+
+[class|=logo] {
+	background: #c94713;
+}	
 
 h3 {
 	text-align : center;
@@ -18,6 +27,7 @@ h3 {
 }
 p {
 	padding : 2%;
+
 }
 img {
 	text-align : center;
@@ -28,15 +38,23 @@ img {
 #wrapper {
 	margin : 0 auto;
 	max-width : 980px;
-	width : 96%;
+	width : 98%;
 	background : #064B7A;
 	padding : 2%;
 	border-radius : 10px;
 }
+
+/*-------Header & Nav------*/
+
+
+
+
 header {
-	padding : 5px;
+	padding : 0.5102%; /* 5px*/
 	text-align : center;
 }
+
+
 nav {
 	background : #6690AD;
 	padding : 0;
@@ -45,41 +63,46 @@ nav {
 }
 nav ul {
 	list-style : none;
-	margin-left : 7%;
+	margin-left : 07.666666667%;
 	padding : 0;
+
+
 }
 nav li a {
 	color : #064B7A;
 	display : block;
 	float : left;
-	padding : 20px;
+	padding : 2.0401%; /* 2px*/
 	text-decoration : none;
 }
+
 nav a:hover, nav li.active a {
 	background-color : #322F2C;
 	color : #fff;
 }
+
+/*-------Main content------*/
+
 .clearfix {
 	clear : both;
 }
 #social {
-	text-align : center;
-	}
+	padding-left: 20.16129032%; /* 75px */
+}
 #social img {
-	padding-top : 5px;
-	height : 50px;
-	width : 50px;
+	max-width: 100%;
+	
 }
 .left-col {
 	background :#6690AD;
-	width : 60%;
+	width : 60%; /*588px*/
 	float : left;
 	margin-top : 2%;
 	border-radius : 10px;
 }
 .sidebar {
 	background : #6690AD;
-	width : 38%;
+	width :37.9592%; /*372px*/
 	float : right;
 	margin-top : 2%;
 	border-radius : 10px;
@@ -87,7 +110,7 @@ nav a:hover, nav li.active a {
 .vid {
 	position : relative;
 	padding-bottom : 56.25%;
-	padding-top : 30px;
+	padding-top : 05.10204082%;
 	height : 0;
 	overflow : hidden;
 }
@@ -107,11 +130,17 @@ footer {
 }
 /*-------Media------*/
 
-@media screen and (max-width: 478px) 	{
+
+@media only screen and (min-device-width : 320px) and (max-device-width : 480px) {
 body {
 	font-size: 13px;
 }
+#social	{
+	display: none;
+	width:75%
 }
+}
+
 
 @media screen and (max-width: 740px) 	{
 .left-col {
@@ -119,4 +148,25 @@ body {
 }
 .sidebar {
 	width: 100%;
+}
+
+}
+	
+
+
+@media only screen and (min-width: 1140px) {
+
+  .wrapper {
+    width: 1026px;
+    margin: 0 auto;
+}
+
+  .title {
+    font-size: 2em;
+}
+
+  nav a {
+    padding: 024.3664717% 1%;
+}
+  
 }
