@@ -145,13 +145,16 @@ body {
 @media screen and (max-width: 740px) 	{
 .left-col {
 	width: 100%;
+	background: #c94713;
 }
 .sidebar {
 	width: 100%;
+	background: #c94713;
 }
-
+nav, footer {
+	background:  #c94713;
 }
-	
+}	
 
 
 @media only screen and (min-width: 1140px) {
